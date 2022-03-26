@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import classes from "./Blog.module.css";
 import Post from "../../components/Post/Post";
 import FullPost from "../../components/FullPost/FullPost";
+import FavoritePost from "../../components/FavoritePost/FavoritePost";
 
 class Blog extends Component{
     render() {
@@ -10,6 +11,7 @@ class Blog extends Component{
                 <h1>Here is the list of Post</h1>
                 <Post />
                 <FullPost />
+                <FavoritePost />
             </div>
         );
     };
