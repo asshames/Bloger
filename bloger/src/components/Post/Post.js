@@ -5,8 +5,8 @@ import Button from "../Button/Button";
 const Post = (props) => (
     <article>
         <Button clicked = {props.FullPostClicked} >Open</Button>
-        <title>Title</title>
-        <p>body</p>
+        <title>{props.title}</title>
+        <p>{props.body}</p>
     </article>
 );
 
