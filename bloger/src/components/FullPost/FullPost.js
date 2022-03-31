@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button/Button";
 import classes from "./FullPost.module.css";
 
 
@@ -32,11 +33,12 @@ class FullPost extends Component {
         }
         if (this.state.loadedPost) {
             post = (
-                <div className="FullPost">
+                <div className={classes.FullPost}>
                     <h1>{this.state.loadedPost.title}</h1>
                     <p>{this.state.loadedPost.body}</p>
                     <div className="Edit">
-                        <button className="Delete" onClick={this.postDeleteHandler}>Delete</button>
+                        {/* <button className="Delete" onClick={this.postDeleteHandler}>Delete</button> */}
+                        <Button className="Delete" onClick={this.postDeleteHandler}>Delete</Button>
                     </div>
                 </div>
             );
