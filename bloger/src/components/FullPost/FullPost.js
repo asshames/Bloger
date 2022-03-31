@@ -1,6 +1,7 @@
-import React from "react";
+import React, {Component} from "react";
 import Button from "../Button/Button";
 import classes from "./FullPost.module.css";
+import axios from "axios";
 
 
 class FullPost extends Component {

@@ -1,6 +1,7 @@
-import React from "react";
+import React, {Component} from "react";
 import classes from "./FavoritePost.module.css";
 import Button from "../Button/Button";
+import axios from "axios";
 
 class FavoritePost extends Component {
     state = {
@@ -41,6 +42,7 @@ class FavoritePost extends Component {
                 </div>
             );
         }
+        return post;
     }
 }
 export default FavoritePost;
