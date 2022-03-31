@@ -11,7 +11,7 @@ class Blog extends Component{
         posts: [],
         postSelectedId: null,
         error: false
-    }
+    };
 
     componentDidMount() {
         axios.get("https://jsonplaceholder.typicode.com/posts")
@@ -21,11 +21,11 @@ class Blog extends Component{
             .catch(error => {
                 this.setState({ error: true });
             });
-    }
+    };
 
     postSelectedHandler = (id) => {
         this.setState({ postSelectId: id });
-    }
+    };
 
     render() {
         let posts = <p style={{ textAlign: "center" }}> Something went wrong</p>
@@ -36,7 +36,7 @@ class Blog extends Component{
                     title={post.title}
                     clicked={()=>this.postSelectedHandler(post.id)} />
             });
-        }
+        };
         return (
             <div className={classes.Blog}>
                 <h1>Here is the list of Post</h1>

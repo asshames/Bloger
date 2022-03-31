@@ -16,16 +16,16 @@ class FullPost extends Component {
                     .then(response => {
                         this.setState({ loadedPost: response.data });
                     });
-            }
-        }
-    }
+            };
+        };
+    };
 
     postDeleteHandler = () => {
         axios.delete('/posts/' + this.props.id)
             .then(response => {
                 console.log(response);
-        })
-    }
+            });
+    };
 
     render () {
         let post = <p style={{ textAlign: 'center' }}>Please select a Post!</p>;
@@ -43,9 +43,9 @@ class FullPost extends Component {
                     </div>
                 </div>
             );
-        }
+        };
         return post;
-    }
-}
+    };
+};
 
 export default FullPost;
