@@ -4,9 +4,11 @@ import Button from "../Button/Button";
 
 const Post = (props) => (
     <article className={classes.Post}>
-        <Button clicked = {props.FullPostClicked} >Open</Button>
-        <title>{props.title}</title>
-        <p>{props.body}</p>
+        <Button clicked={props.FullPostClicked}>Open</Button>
+        <h1>{props.title}</h1>
+        <div>
+            <p>{props.body}</p>
+        </div>
     </article>
 );
 
