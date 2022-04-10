@@ -40,6 +40,9 @@ class FullPost extends Component {
                     <div className="Edit">
                         <Button className="Delete" onClick={this.postDeleteHandler}>Delete</Button>
                     </div>
+                    <div className="Edit">
+                        <Button className="Favorite" onClick={this.postDeleteHandler}>Favorite</Button>
+                    </div>
                 </div>
             );
         };

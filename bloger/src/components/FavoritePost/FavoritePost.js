@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import classes from "./FavoritePost.module.css";
-import Button from "../Button/Button";
+import Delete from "../Delete/Delete";
 import axios from "axios";
 
 class FavoritePost extends Component {
@@ -37,7 +37,7 @@ class FavoritePost extends Component {
                     <h1>{this.state.favoritePost.title}</h1>
                     <p>{this.state.favoritePost.body}</p>
                     <div className="Edit">
-                        <Button className="Delete" onClick={this.postDeleteHandler}>Delete</Button>
+                        <Delete className="Delete" onClick={this.postDeleteHandler}>Delete</Delete>
                     </div>
                 </div>
             );;
