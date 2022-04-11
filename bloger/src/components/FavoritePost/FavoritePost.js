@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import classes from "./FavoritePost.module.css";
 import Delete from "../Delete/Delete";
 import axios from "axios";
+import Spinner from "../Spinner/Spinner";
 
 class FavoritePost extends Component {
     state = {
@@ -29,7 +30,7 @@ class FavoritePost extends Component {
     render() {
         let post = <p style={{ textAlign: 'center' }}>Please select for adding Favorite Post!</p>;
         if (this.props.id) {
-            post = <p style={{ textAlign: 'center' }}>Loading........!</p>;
+            post = <Spinner />;
         }
         if (this.state.favoritePost) {
             post = (
