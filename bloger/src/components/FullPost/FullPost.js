@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import Button from "../Button/Button";
 import classes from "./FullPost.module.css";
 import axios from "axios";
-
+import Spinner from "../Spinner/Spinner";
 
 class FullPost extends Component {
     state = {
@@ -30,7 +30,7 @@ class FullPost extends Component {
     render () {
         let post = <p style={{ textAlign: 'center' }}>Please select a Post!</p>;
         if (this.props.id) {
-            post = <p style={{ textAlign: 'center' }}>Loading........!</p>;
+            post = <Spinner />;
         }
         if (this.state.loadedPost) {
             post = (
