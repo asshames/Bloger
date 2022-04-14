@@ -36,3 +36,34 @@
 .Edit Button.Delete:active {
     color: darkred;
 }
+
+.Delete {
+
+}
+
+.Delete label {
+    display: block;
+    color: grey;
+}
+
+.Delete Button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    color: #fa923f;
+}
+
+.Delete Button:hover,
+.Delete Button:active {
+    color: #521751;
+}
+
+.Delete Button.Delete {
+    color: red;
+}
+
+.Delete Button.Delete:hover,
+.Delete Button.Delete:active {
+    color: darkred;
+}

@@ -37,7 +37,7 @@ class FullPost extends Component {
                 <div className={classes.FullPost}>
                     <h1>{this.state.loadedPost.title}</h1>
                     <p>{this.state.loadedPost.body}</p>
-                    <div className="Edit">
+                    <div className="Delete">
                         <Button className="Delete" onClick={this.postDeleteHandler}>Delete</Button>
                     </div>
                     <div className="Edit">
